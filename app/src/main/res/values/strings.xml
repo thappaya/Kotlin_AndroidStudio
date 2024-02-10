@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">RETRO RUMBLE</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Sign in</string>
+    <string name="second_fragment_label">Sign up</string>
+    <string name="third_fragment_label">Home</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="rr_welcome"><b>The biggest retro game store in Bangkok, now open!</b></string>
+    <string name="rr_welcome2">We might have the one that suits your appetite, drop by and feel free to have a look!</string>
+    <string name="rr_services">Offering services for retro/vintage consoles, by retro gamers.</string>
+    <string name="rr_joinwelcome"><b>Join today to receive your RETRO RUMBLE benefits!</b></string>
+    <string name="rr_signup">By signing up, it is unanimous that you have acknowledged and agreed to <b>
+        RETRO RUMBLE privacy policy</b> and agreed to <b>RETRO RUMBLE terms of agreement</b>
+        (Published 10th May, 2027)</string>
+    <string name="membershipLevel">Your current Membership level:</string>
+    <string name="rr_level1">RETRO RUMBLE Plus</string>
+    <string name="rr_level2">RETRO RUMBLE Ultimate</string>
+</resources>
