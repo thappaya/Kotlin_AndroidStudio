@@ -6,18 +6,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ThirdFragment">
 
-    <com.google.android.gms.maps.MapView
-        android:id="@+id/mapView"
-        android:layout_width="385dp"
-        android:layout_height="204dp"
-        android:layout_marginTop="8dp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/arcadeButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        tools:visibility="visible" />
-
     <TextView
         android:id="@+id/homeTitle"
         android:layout_width="wrap_content"
@@ -31,21 +19,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="monospace"
-        android:text="RETRO RUMBLE near you"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/mapView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
         android:id="@+id/textView4"
@@ -66,11 +39,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="8dp"
         android:fontFamily="monospace"
         android:text="@string/rr_level1"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
@@ -86,17 +57,40 @@
         app:layout_constraintBottom_toTopOf="@+id/freeDrinkButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mapView" />
+        app:layout_constraintTop_toBottomOf="@id/textView5" />
 
     <Button
         android:id="@+id/freeDrinkButton"
         android:layout_width="250dp"
         android:layout_height="69dp"
-        android:layout_marginBottom="32dp"
         android:text="Redeem your Free Drinks (2/10 Available)"
         android:typeface="monospace"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/logoutButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/arcadeButton" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Logout"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@id/rrMapButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/freeDrinkButton" />
+
+    <ImageButton
+        android:id="@+id/rrMapButton"
+        android:layout_width="167dp"
+        android:layout_height="66dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/screenshot_2024_02_10_184648_removebg_preview"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoutButton" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

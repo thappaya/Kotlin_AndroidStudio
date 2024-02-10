@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:layout_marginBottom="21dp"
+            android:layout_marginBottom="8dp"
             android:fontFamily="monospace"
             android:text="@string/rr_welcome"
             app:layout_constraintBottom_toTopOf="@+id/textView"
@@ -52,7 +52,7 @@
             android:id="@+id/et_userName"
             android:layout_width="277dp"
             android:layout_height="48dp"
-            android:layout_marginTop="160dp"
+            android:layout_marginTop="8dp"
             android:layout_marginBottom="16dp"
             android:ems="10"
             android:fontFamily="monospace"
@@ -62,7 +62,7 @@
             app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@id/imageView" />
 
         <Button
             android:id="@+id/buttonSecond"
@@ -91,6 +91,17 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/et_userName" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="302dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/screenshot_2024_02_10_184648_removebg_preview"
+            app:layout_constraintBottom_toTopOf="@+id/et_userName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

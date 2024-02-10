@@ -36,6 +36,54 @@
         android:name="com.a4d.retrorumble.ThirdFragment"
         android:label="@string/third_fragment_label"
         tools:layout="@layout/fragment_third">
+        <action
+            android:id="@+id/action_ThirdFragment_to_FourthFragment"
+            app:destination="@id/FourthFragment">
+        </action>
+        <action
+            android:id="@+id/action_ThirdFragment_to_FifthFragment"
+            app:destination="@id/FifthFragment">
+        </action>
+        <action
+            android:id="@+id/action_ThirdFragment_to_MapFragment"
+            app:destination="@id/MapFragment">
+        </action>
+        <action
+            android:id="@+id/action_ThirdFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment">
+        </action>
 
+    </fragment>
+    <fragment
+        android:id="@+id/FourthFragment"
+        android:name="com.a4d.retrorumble.FourthFragment"
+        android:label="@string/arcade_pass"
+        tools:layout="@layout/fragment_fourth">
+        <action
+            android:id="@+id/action_FourthFragment_to_ThirdFragment"
+            app:destination="@id/ThirdFragment">
+        </action>
+
+    </fragment>
+    <fragment
+        android:id="@+id/FifthFragment"
+        android:name="com.a4d.retrorumble.FifthFragment"
+        android:label="@string/free_drinks"
+        tools:layout="@layout/fragment_fifth">
+        <action
+            android:id="@+id/action_FifthFragment_to_ThirdFragment"
+            app:destination="@id/ThirdFragment">
+        </action>
+
+    </fragment>
+    <fragment
+        android:id="@+id/MapFragment"
+        android:name="com.a4d.retrorumble.MapFragment"
+        android:label="@string/rr_nearyou"
+        tools:layout="@layout/fragment_map">
+        <action
+            android:id="@+id/action_MapFragment_to_ThirdFragment"
+            app:destination="@id/ThirdFragment">
+        </action>
     </fragment>
 </navigation>

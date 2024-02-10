@@ -15,7 +15,7 @@
             android:id="@+id/button_second"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="21dp"
+            android:layout_marginTop="32dp"
             android:layout_marginBottom="32dp"
             android:fontFamily="monospace"
             android:text="Sign Up"
@@ -27,14 +27,12 @@
 
         <TextView
             android:id="@+id/textview_second"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="32dp"
+            android:layout_width="379dp"
+            android:layout_height="85dp"
+            android:layout_marginTop="32dp"
             android:fontFamily="monospace"
             android:text="@string/rr_signup"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/rrCheck"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -43,26 +41,24 @@
         <EditText
             android:id="@+id/editTextTextEmailAddress"
             android:layout_width="300dp"
-            android:layout_height="43dp"
+            android:layout_height="48dp"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
             android:layout_marginBottom="2dp"
             android:ems="10"
             android:fontFamily="monospace"
-            android:hint="Please enter your E-mail"
+            android:hint="Please enter your name"
             android:inputType="textEmailAddress"
             app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
         <EditText
             android:id="@+id/editTextTextPassword"
             android:layout_width="301dp"
-            android:layout_height="43dp"
-            android:layout_marginTop="72dp"
-            android:layout_marginBottom="21dp"
+            android:layout_height="48dp"
             android:ems="10"
             android:fontFamily="monospace"
             android:hint="Please enter your Password"
@@ -70,7 +66,28 @@
             app:layout_constraintBottom_toTopOf="@+id/button_second"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextTextEmailAddress"
             app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="302dp"
+            android:layout_height="150dp"
+            android:src="@drawable/screenshot_2024_02_10_184648_removebg_preview"
+            app:layout_constraintBottom_toTopOf="@id/editTextTextEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/rrCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="@string/rr_agree"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_second" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

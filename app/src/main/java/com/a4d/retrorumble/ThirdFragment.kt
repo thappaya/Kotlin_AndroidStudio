@@ -7,65 +7,44 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.a4d.retrorumble.databinding.FragmentThirdBinding
-import com.google.android.gms.maps.*
-import com.google.android.gms.maps.model.LatLng
-import com.google.android.gms.maps.model.MarkerOptions
 import com.google.android.material.snackbar.Snackbar
 
-
-
-class ThirdFragment : Fragment(), OnMapReadyCallback {
-    private lateinit var mapView: MapView
-    private lateinit var googleMap: GoogleMap
-
+class ThirdFragment : Fragment() {
+    private var _binding: FragmentThirdBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val rootView = inflater.inflate(R.layout.fragment_third, container, false)
 
-        mapView = rootView.findViewById(R.id.mapView)
-        mapView.onCreate(savedInstanceState)
-        mapView.onResume() // needed to get the map to display immediately
+        _binding = FragmentThirdBinding.inflate(inflater, container, false)
+        return binding.root
 
-        try {
-            activity?.applicationContext?.let { MapsInitializer.initialize(it) }
-        } catch (e: Exception) {
-            e.printStackTrace()
+    }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.arcadeButton.setOnClickListener {
+            Snackbar.make(view,"Please contact the RETRO RUMBLE Arcade Staff and scan the QR" +
+                    " Code to redeem", Snackbar.LENGTH_LONG).show()
+            findNavController().navigate(R.id.action_ThirdFragment_to_FourthFragment)
         }
-
-        mapView.getMapAsync(this)
-
-        return rootView
+        binding.freeDrinkButton.setOnClickListener {
+            Snackbar.make(view,"Please contact the RUMBLECAFÉ Barista and scan the QR" +
+                    " Code to redeem", Snackbar.LENGTH_LONG).show()
+            findNavController().navigate(R.id.action_ThirdFragment_to_FifthFragment)
+        }
+        binding.rrMapButton.setOnClickListener {
+            findNavController().navigate(R.id.action_ThirdFragment_to_MapFragment)
+        }
+        binding.logoutButton.setOnClickListener {
+            findNavController().navigate(R.id.action_ThirdFragment_to_FirstFragment)
+        }
     }
-    override fun onMapReady(map: GoogleMap) {
-        googleMap = map
-
-        // Add a marker in a random location and move the camera
-        val location = LatLng(0.0, 0.0)
-        googleMap.addMarker(MarkerOptions().position(location).title("Marker"))
-        googleMap.moveCamera(CameraUpdateFactory.newLatLng(location))
-    }
-
-    override fun onResume() {
-        super.onResume()
-        mapView.onResume()
-    }
-
-    override fun onPause() {
-        super.onPause()
-        mapView.onPause()
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        mapView.onDestroy()
-    }
-
-    override fun onLowMemory() {
-        super.onLowMemory()
-        mapView.onLowMemory()
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }
 
