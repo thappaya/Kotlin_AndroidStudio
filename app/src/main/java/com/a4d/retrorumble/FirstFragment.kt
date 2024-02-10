@@ -8,18 +8,12 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.a4d.retrorumble.databinding.FragmentFirstBinding
 import com.google.android.material.snackbar.Snackbar
-
-/**
- * A simple [Fragment] subclass as the default destination in the navigation.
- */
 class FirstFragment : Fragment() {
 
 
 
     private var _binding: FragmentFirstBinding? = null
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -59,7 +53,7 @@ class FirstFragment : Fragment() {
             Snackbar.make(requireView(), "Welcome to the world of RETRO RUMBLE!\nLogged in as $parsedText", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
         } else {
-            Snackbar.make(requireView(), "Please enter some text", Snackbar.LENGTH_SHORT)
+            Snackbar.make(requireView(), "DEMO mode initiated. Logout and enter your Account Name and Password to use the app.", Snackbar.LENGTH_SHORT)
                 .setAction("Action", null).show()
         }
     }
