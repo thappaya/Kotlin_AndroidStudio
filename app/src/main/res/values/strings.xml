@@ -11,14 +11,12 @@
     <string name="rr_welcome2">We might have the one that suits your appetite, drop by and feel free to have a look!</string>
     <string name="rr_services">Offering services for retro/vintage consoles, by retro gamers.</string>
     <string name="rr_joinwelcome"><b>Join today to receive your RETRO RUMBLE benefits!</b></string>
-    <string name="rr_signup">By signing up, it is unanimous that you have acknowledged and agreed to <b>
-        RETRO RUMBLE privacy policy</b> and agreed to <b>RETRO RUMBLE terms of agreement</b>
-        (Published 10th May, 2027)</string>
+    <string name="rr_signup">By signing up, it is unanimous that you have acknowledged and agreed to <b>RETRO RUMBLE privacy policy</b> and agreed to <b>RETRO RUMBLE terms of agreement</b>.</string>
     <string name="membershipLevel">Your current Membership level:</string>
     <string name="rr_level1">RETRO RUMBLE Plus</string>
     <string name="rr_level2">RETRO RUMBLE Ultimate</string>
     <string name="arcade_pass">Arcade Pass</string>
     <string name="free_drinks">Free Drinks Pass</string>
     <string name="rr_nearyou">RETRO RUMBLE near you</string>
-    <string name="rr_agree">I agree to <b>RETRO RUMBLE's privacy policy</b> and <b>RETRO RUMBLE's terms of agreement</b></string>
+    <string name="rr_agree">I agree to <b>RETRO RUMBLE privacy policy</b> and <b>RETRO RUMBLE terms of agreement </b>(Published 10th May, 2027).</string>
 </resources>

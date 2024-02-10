@@ -15,19 +15,19 @@
             android:id="@+id/button_second"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:layout_marginBottom="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
             android:fontFamily="monospace"
             android:text="Sign Up"
             app:layout_constraintBottom_toTopOf="@id/textview_second"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+            app:layout_constraintTop_toBottomOf="@id/rrMembershipKey" />
 
         <TextView
             android:id="@+id/textview_second"
-            android:layout_width="379dp"
+            android:layout_width="0dp"
             android:layout_height="85dp"
             android:layout_marginTop="32dp"
             android:fontFamily="monospace"
@@ -63,7 +63,7 @@
             android:fontFamily="monospace"
             android:hint="Please enter your Password"
             android:inputType="textPassword"
-            app:layout_constraintBottom_toTopOf="@+id/button_second"
+            app:layout_constraintBottom_toTopOf="@id/rrMembershipKey"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/editTextTextEmailAddress"
@@ -83,11 +83,27 @@
             android:id="@+id/rrCheck"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
             android:fontFamily="monospace"
             android:text="@string/rr_agree"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textview_second" />
+
+        <EditText
+            android:id="@+id/rrMembershipKey"
+            android:layout_width="301dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="16dp"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:hint="RETRO RUMBLE Membership key"
+            android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@+id/button_second"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
