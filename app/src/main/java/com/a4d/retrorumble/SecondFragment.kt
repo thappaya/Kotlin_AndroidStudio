@@ -29,13 +29,27 @@ class SecondFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonSecond.setOnClickListener {
-            Snackbar.make(view,"Sign up successful!", Snackbar.LENGTH_LONG).show()
             findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
+            parseText()
         }
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    private fun parseText() {
+        val inputText = binding.editTextTextEmailAddress.text.toString().trim()
+
+        if (inputText.isNotEmpty()) {
+            val words = inputText.split(" ")
+            val parsedText = words.joinToString(" ")
+            Snackbar.make(requireView(), "Sign up successful!\nPlease log in as $parsedText", Snackbar.LENGTH_LONG)
+                .setAction("Action", null).show()
+        } else {
+            Snackbar.make(requireView(), "Sign up failed! Please try again later.", Snackbar.LENGTH_SHORT)
+                .setAction("Action", null).show()
+        }
     }
 }

@@ -13,16 +13,19 @@
 
         <action
             android:id="@+id/action_FirstFragment_to_ThirdFragment"
-            app:destination="@id/ThirdFragment">
-             </action>
+            app:destination="@id/ThirdFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"></action>
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment">
-        </action>
+            app:destination="@id/SecondFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"></action>
         <action
             android:id="@+id/action_FirstFragment_to_AboutFragment"
-            app:destination="@id/AboutFragment">
-        </action>
+            app:destination="@id/AboutFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"></action>
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -32,11 +35,14 @@
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            app:destination="@id/FirstFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
         <action
             android:id="@+id/action_SecondFragment_to_AboutFragment"
-            app:destination="@id/AboutFragment">
-        </action>
+            app:destination="@id/AboutFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"></action>
     </fragment>
 
     <fragment
@@ -46,24 +52,29 @@
         tools:layout="@layout/fragment_third">
         <action
             android:id="@+id/action_ThirdFragment_to_FourthFragment"
-            app:destination="@id/FourthFragment">
-        </action>
+            app:destination="@id/FourthFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"></action>
         <action
             android:id="@+id/action_ThirdFragment_to_FifthFragment"
-            app:destination="@id/FifthFragment">
-        </action>
+            app:destination="@id/FifthFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"></action>
         <action
             android:id="@+id/action_ThirdFragment_to_MapFragment"
-            app:destination="@id/MapFragment">
-        </action>
+            app:destination="@id/MapFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"></action>
         <action
             android:id="@+id/action_ThirdFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment">
-        </action>
+            app:destination="@id/FirstFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"></action>
         <action
             android:id="@+id/action_ThirdFragment_to_AboutFragment"
-            app:destination="@id/AboutFragment">
-        </action>
+            app:destination="@id/AboutFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"></action>
 
     </fragment>
     <fragment
@@ -73,12 +84,14 @@
         tools:layout="@layout/fragment_fourth">
         <action
             android:id="@+id/action_FourthFragment_to_ThirdFragment"
-            app:destination="@id/ThirdFragment">
-        </action>
+            app:destination="@id/ThirdFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"></action>
         <action
             android:id="@+id/action_FourthFragment_to_AboutFragment"
-            app:destination="@id/AboutFragment">
-        </action>
+            app:destination="@id/AboutFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"></action>
 
     </fragment>
     <fragment
@@ -88,12 +101,14 @@
         tools:layout="@layout/fragment_fifth">
         <action
             android:id="@+id/action_FifthFragment_to_ThirdFragment"
-            app:destination="@id/ThirdFragment">
-        </action>
+            app:destination="@id/ThirdFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"></action>
         <action
             android:id="@+id/action_FifthFragment_to_AboutFragment"
-            app:destination="@id/AboutFragment">
-        </action>
+            app:destination="@id/AboutFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"></action>
 
     </fragment>
     <fragment
@@ -103,8 +118,9 @@
         tools:layout="@layout/fragment_map">
         <action
             android:id="@+id/action_MapFragment_to_ThirdFragment"
-            app:destination="@id/ThirdFragment">
-        </action>
+            app:destination="@id/ThirdFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"></action>
     </fragment>
     <fragment
         android:id="@+id/AboutFragment"
@@ -113,7 +129,8 @@
         tools:layout="@layout/fragment_about">
         <action
             android:id="@+id/action_AboutFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment">
-        </action>
+            app:destination="@id/FirstFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"></action>
     </fragment>
 </navigation>
