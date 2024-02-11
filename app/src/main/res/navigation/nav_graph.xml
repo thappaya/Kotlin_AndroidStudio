@@ -19,6 +19,10 @@
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment">
         </action>
+        <action
+            android:id="@+id/action_FirstFragment_to_AboutFragment"
+            app:destination="@id/AboutFragment">
+        </action>
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -29,6 +33,10 @@
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_AboutFragment"
+            app:destination="@id/AboutFragment">
+        </action>
     </fragment>
 
     <fragment
@@ -52,6 +60,10 @@
             android:id="@+id/action_ThirdFragment_to_FirstFragment"
             app:destination="@id/FirstFragment">
         </action>
+        <action
+            android:id="@+id/action_ThirdFragment_to_AboutFragment"
+            app:destination="@id/AboutFragment">
+        </action>
 
     </fragment>
     <fragment
@@ -62,6 +74,10 @@
         <action
             android:id="@+id/action_FourthFragment_to_ThirdFragment"
             app:destination="@id/ThirdFragment">
+        </action>
+        <action
+            android:id="@+id/action_FourthFragment_to_AboutFragment"
+            app:destination="@id/AboutFragment">
         </action>
 
     </fragment>
@@ -74,6 +90,10 @@
             android:id="@+id/action_FifthFragment_to_ThirdFragment"
             app:destination="@id/ThirdFragment">
         </action>
+        <action
+            android:id="@+id/action_FifthFragment_to_AboutFragment"
+            app:destination="@id/AboutFragment">
+        </action>
 
     </fragment>
     <fragment
@@ -84,6 +104,16 @@
         <action
             android:id="@+id/action_MapFragment_to_ThirdFragment"
             app:destination="@id/ThirdFragment">
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/AboutFragment"
+        android:name="com.a4d.retrorumble.AboutFragment"
+        android:label="@string/rr_AboutTitle"
+        tools:layout="@layout/fragment_about">
+        <action
+            android:id="@+id/action_AboutFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment">
         </action>
     </fragment>
 </navigation>

@@ -19,4 +19,9 @@
     <string name="free_drinks">Free Drinks Pass</string>
     <string name="rr_nearyou">RETRO RUMBLE near you</string>
     <string name="rr_agree">I agree to <b>RETRO RUMBLE privacy policy</b> and <b>RETRO RUMBLE terms of agreement </b>(Published 10th May, 2027).</string>
+    <string name="rr_About">Created by Thappaya Wangsantiporn (2007010001) </string>
+    <string name="rr_About2"> and </string>
+    <string name="rr_About3">Kamolwit Thangsupanit (2106150005).</string>
+    <string name="rr_Copyright">©2027 RETRO RUMBLE, a subsidiary of 4D inc. All Rights Reserved.</string>
+    <string name="rr_AboutTitle">About RETRO RUMBLE</string>
 </resources>
