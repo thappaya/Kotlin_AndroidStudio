@@ -24,7 +24,7 @@
         android:fontFamily="monospace"
         android:text="@string/app_name"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/rrAbout1"
+        app:layout_constraintBottom_toTopOf="@+id/rrAbout4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
@@ -33,7 +33,7 @@
         android:id="@+id/rrAbout1"
         android:layout_width="359dp"
         android:layout_height="37dp"
-        android:layout_marginTop="49dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="monospace"
         android:text="@string/rr_About"
         android:textAlignment="center"
@@ -41,7 +41,7 @@
         app:layout_constraintBottom_toTopOf="@+id/rrAbout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rrAboutTitle" />
+        app:layout_constraintTop_toBottomOf="@id/rrAbout4" />
 
     <TextView
         android:id="@+id/rrAbout2"
@@ -87,8 +87,8 @@
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="364dp"
-        android:layout_height="44dp"
+        android:layout_width="306dp"
+        android:layout_height="55dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="80dp"
         android:fontFamily="monospace"
@@ -98,6 +98,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/backButton3" />
+
+    <TextView
+        android:id="@+id/rrAbout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="monospace"
+        android:text="@string/createdBy"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/rrAbout1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rrAboutTitle" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
