@@ -41,6 +41,9 @@ class ThirdFragment : Fragment() {
         binding.logoutButton.setOnClickListener {
             findNavController().navigate(R.id.action_ThirdFragment_to_FirstFragment)
         }
+        binding.shopButton.setOnClickListener {
+            findNavController().navigate(R.id.action_ThirdFragment_to_ShopFragment)
+        }
     }
     override fun onDestroyView() {
         super.onDestroyView()

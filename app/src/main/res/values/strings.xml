@@ -25,4 +25,16 @@
     <string name="rr_Copyright">©2027 RETRO RUMBLE, a subsidiary of 4D inc. All Rights Reserved.</string>
     <string name="rr_AboutTitle">About RETRO RUMBLE</string>
     <string name="createdBy">Created by</string>
+    <string name="shopButton">RETRO RUMBLE eShop</string>
+    <string name="shopTitle">Welcome to RETRO RUMBLE eShop!</string>
+    <string name="forYou">Recommended for you:</string>
+    <string name="neoGeo">SNK NEO-GEO AES Complete Pak</string>
+    <string name="neoGeoPrice">Starts at 23,990 THB</string>
+    <string name="shopButtonTitle">View our selection:</string>
+    <string name="PlayStation">RETRO RUMBLE eShop: PlayStation</string>
+    <string name="PSTitle">RETRO RUMBLE</string>
+    <string name="PSTitle2">PlayStation Authorized Dealer</string>
+    <string name="NewestArrival">Newest Arrival:</string>
+    <string name="PS3BC">PLAYSTATION 3 60GB CECH-A06 (ASIA/Backwards Compatible)</string>
+    <string name="ps3Quote">Starts at 4,500 THB</string>
 </resources>
