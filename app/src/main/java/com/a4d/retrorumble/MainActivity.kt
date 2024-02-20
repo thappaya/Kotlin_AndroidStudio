@@ -1,7 +1,6 @@
 package com.a4d.retrorumble
 
 import android.os.Bundle
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -27,11 +26,6 @@ class MainActivity : AppCompatActivity() {
         appBarConfiguration = AppBarConfiguration(navController.graph)
         setupActionBarWithNavController(navController, appBarConfiguration)
 
-        binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "RETRO RUMBLE Support: 1800-RTR-RUMBLE (Free, " +
-                    "Available Everyday at 8AM-6PM)", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
-        }
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

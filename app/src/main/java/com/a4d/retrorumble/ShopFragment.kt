@@ -30,7 +30,12 @@ class ShopFragment: Fragment() {
         binding.PSButton.setOnClickListener{
             findNavController().navigate(R.id.action_ShopFragment_to_PlayStationFragment)
         }
-
+        binding.AESButton.setOnClickListener{
+            findNavController().navigate(R.id.action_ShopFragment_to_AESFragment)
+        }
+        binding.SEGAButton.setOnClickListener{
+            findNavController().navigate(R.id.action_ShopFragment_to_SEGAFragment)
+        }
     }
 
     override fun onDestroyView() {

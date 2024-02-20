@@ -44,6 +44,12 @@ class ThirdFragment : Fragment() {
         binding.shopButton.setOnClickListener {
             findNavController().navigate(R.id.action_ThirdFragment_to_ShopFragment)
         }
+        binding.fab.setOnClickListener {
+            Snackbar.make(view, "RETRO RUMBLE Support: 1800-RTR-RUMBLE (Free, " +
+                    "Available Everyday at 8AM-6PM)", Snackbar.LENGTH_LONG)
+                .setAction("Action", null).show()
+            findNavController().navigate(R.id.action_ThirdFragment_to_SupportFragment)
+        }
     }
     override fun onDestroyView() {
         super.onDestroyView()

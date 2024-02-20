@@ -80,6 +80,11 @@
             app:destination="@id/ShopFragment"
             app:enterAnim="@android:anim/slide_in_left"
             app:exitAnim="@android:anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_ThirdFragment_to_SupportFragment"
+            app:destination="@id/SupportFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"/>
     </fragment>
     <fragment
         android:id="@+id/FourthFragment"
@@ -153,6 +158,16 @@
             app:destination="@id/PlayStationFragment"
             app:enterAnim="@android:anim/slide_in_left"
             app:exitAnim="@android:anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_ShopFragment_to_AESFragment"
+            app:destination="@id/AESFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_ShopFragment_to_SEGAFragment"
+            app:destination="@id/SEGAFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"/>
     </fragment>
     <fragment
         android:id="@+id/PlayStationFragment"
@@ -162,6 +177,39 @@
         <action
             android:id="@+id/action_PlayStationFragment_to_ShopFragment"
             app:destination="@id/ShopFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/AESFragment"
+        android:name="com.a4d.retrorumble.AESFragment"
+        android:label="@string/AESTitle"
+        tools:layout="@layout/fragment_aes">
+        <action
+            android:id="@+id/action_AESFragment_to_ShopFragment"
+            app:destination="@id/ShopFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/SEGAFragment"
+        android:name="com.a4d.retrorumble.SEGAFragment"
+        android:label="@string/SEGA_name"
+        tools:layout="@layout/fragment_sega">
+        <action
+            android:id="@+id/action_SEGAFragement_to_ShopFragment"
+            app:destination="@id/ShopFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/SupportFragment"
+        android:label="@string/rr_Support"
+        android:name="com.a4d.retrorumble.SupportFragment"
+        tools:layout="@layout/fragment_support">
+        <action
+            android:id="@+id/action_SupportFragment_to_ThirdFragment"
+            app:destination="@id/ThirdFragment"
             app:enterAnim="@android:anim/slide_in_left"
             app:exitAnim="@android:anim/slide_out_right"/>
     </fragment>

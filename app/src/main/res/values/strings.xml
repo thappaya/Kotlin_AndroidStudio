@@ -31,10 +31,27 @@
     <string name="neoGeo">SNK NEO-GEO AES Complete Pak</string>
     <string name="neoGeoPrice">Starts at 23,990 THB</string>
     <string name="shopButtonTitle">View our selection:</string>
-    <string name="PlayStation">RETRO RUMBLE eShop: PlayStation</string>
+    <string name="PlayStation">PlayStation</string>
     <string name="PSTitle">RETRO RUMBLE</string>
     <string name="PSTitle2">PlayStation Authorized Dealer</string>
     <string name="NewestArrival">Newest Arrival:</string>
     <string name="PS3BC">PLAYSTATION 3 60GB CECH-A06 (ASIA/Backwards Compatible)</string>
     <string name="ps3Quote">Starts at 4,500 THB</string>
+    <string name="AESTitle">SNK NEO-GEO AES Video Game System</string>
+    <string name="AES_Description">SNK NEO-GEO AES is a video game console manufactured by SNK in 1990s, aimed to bring Arcade Titles to the comfort
+    of your home. With a continuity feature of bringing your own save file from your AES console to the MVS Arcade Machine and vice versa,
+        it is considered by many to be a console that is ahead of its time.</string>
+    <string name="addExtraController">Add Extra Controller: 400 THB</string>
+    <string name="addHDMIAdapter">Add HDMI Converter: 200 THB</string>
+    <string name="PSOne">PlayStation 1/PSOne</string>
+    <string name="PSTwo">PlayStation 2</string>
+    <string name="PSThree">PLAYSTATION 3/PS3</string>
+    <string name="PSFour">PlayStation 4</string>
+    <string name="PSFive">PlayStation 5</string>
+    <string name="ViewAll">View all</string>
+    <string name="SEGA_name">SEGA Consoles</string>
+    <string name="rr_Support">RETRO RUMBLE Support</string>
+    <string name="support_Title">We are here to help!</string>
+    <string name="support_Desc">After submitting your request, RETRO RUMBLE representative will attempt to contact you by E-mail,
+        please provide all the necessary details so RETRO RUMBLE can assist you as much as we can.</string>
 </resources>

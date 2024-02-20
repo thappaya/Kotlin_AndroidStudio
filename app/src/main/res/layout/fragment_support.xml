@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SupportFragment">
+
+    <ImageView
+        android:id="@+id/RR_logo"
+        android:layout_width="302dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="3dp"
+        android:src="@drawable/screenshot_2024_02_10_184648_removebg_preview"
+        app:layout_constraintBottom_toTopOf="@+id/SupportTitle2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/SupportTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="83dp"
+        android:layout_marginEnd="84dp"
+        android:fontFamily="monospace"
+        android:text="@string/support_Title"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/supportName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RR_logo" />
+
+    <EditText
+        android:id="@+id/supportName"
+        android:layout_width="357dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="Please provide your full name"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/supportMail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SupportTitle2" />
+
+    <EditText
+        android:id="@+id/supportMail"
+        android:layout_width="357dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="Enter your E-mail"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/supportPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/supportName" />
+
+    <EditText
+        android:id="@+id/supportPhone"
+        android:layout_width="357dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="Enter your phone number (optional)"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/reqButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/supportMail" />
+
+    <Button
+        android:id="@+id/reqButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="monospace"
+        android:text="Submit Request"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/backButton8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/supportPhone" />
+
+    <TextView
+        android:id="@+id/Support_Description"
+        android:layout_width="349dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="88dp"
+        android:fontFamily="monospace"
+        android:text="@string/support_Desc"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backButton8" />
+
+    <Button
+        android:id="@+id/backButton8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="monospace"
+        android:text="Back"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Support_Description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reqButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
