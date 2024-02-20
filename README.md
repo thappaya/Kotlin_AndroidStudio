@@ -1,1 +1,1 @@
-Tested on AVD, yet to be tested on real devices.
+Application tested on AVD and real Android phone.
