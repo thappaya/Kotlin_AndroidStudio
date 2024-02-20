@@ -34,44 +34,16 @@
         android:layout_width="359dp"
         android:layout_height="37dp"
         android:layout_marginTop="16dp"
+        android:layout_marginBottom="99dp"
         android:fontFamily="monospace"
         android:text="@string/rr_About"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/rrAbout2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/rrAbout4" />
-
-    <TextView
-        android:id="@+id/rrAbout2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="monospace"
-        android:text="@string/rr_About2"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/rrAbout3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rrAbout1" />
-
-    <TextView
-        android:id="@+id/rrAbout3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="39dp"
-        android:layout_marginEnd="39dp"
-        android:layout_marginBottom="16dp"
-        android:fontFamily="monospace"
-        android:text="@string/rr_About3"
         android:textAlignment="center"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/backButton3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rrAbout2" />
+        app:layout_constraintTop_toBottomOf="@id/rrAbout4" />
+
 
     <Button
         android:id="@+id/backButton3"
@@ -83,7 +55,7 @@
         app:layout_constraintBottom_toTopOf="@+id/textView9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rrAbout3" />
+        app:layout_constraintTop_toBottomOf="@+id/rrAbout1" />
 
     <TextView
         android:id="@+id/textView9"

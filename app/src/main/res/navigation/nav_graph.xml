@@ -179,6 +179,11 @@
             app:destination="@id/ShopFragment"
             app:enterAnim="@android:anim/slide_in_left"
             app:exitAnim="@android:anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_PlayStationFragment_to_PS3Fragment"
+            app:destination="@id/PS3Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"/>
     </fragment>
     <fragment
         android:id="@+id/AESFragment"
@@ -228,6 +233,17 @@
             app:destination="@id/SEGAFragment"
             app:enterAnim="@android:anim/slide_in_left"
             app:exitAnim="@android:anim/slide_out_right"/>
-</fragment>
+    </fragment>
+    <fragment
+        android:id="@+id/PS3Fragment"
+        android:name="com.a4d.retrorumble.PS3Fragment"
+        android:label="@string/PlayStation"
+        tools:layout="@layout/fragment_ps3">
+        <action
+            android:id="@+id/action_PS3Fragment_to_PlayStationFragment"
+            app:destination="@id/PlayStationFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"/>
+    </fragment>
 
 </navigation>

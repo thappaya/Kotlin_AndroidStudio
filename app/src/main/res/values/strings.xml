@@ -20,8 +20,6 @@
     <string name="rr_nearyou">RETRO RUMBLE near you</string>
     <string name="rr_agree">I agree to <b>RETRO RUMBLE privacy policy</b> and <b>RETRO RUMBLE terms of agreement </b>(Published 10th May, 2027).</string>
     <string name="rr_About">Thappaya Wangsantiporn (2007010001) </string>
-    <string name="rr_About2"> and </string>
-    <string name="rr_About3">Kamolwit Thangsupanich (2106150005)</string>
     <string name="rr_Copyright">©2027 RETRO RUMBLE, a subsidiary of 4D inc. All Rights Reserved.</string>
     <string name="rr_AboutTitle">About RETRO RUMBLE</string>
     <string name="createdBy">Created by</string>
@@ -31,7 +29,7 @@
     <string name="neoGeo">SNK NEO-GEO AES Complete Pak</string>
     <string name="neoGeoPrice">Starts at 23,990 THB</string>
     <string name="shopButtonTitle">View our selection:</string>
-    <string name="PlayStation">PlayStation</string>
+    <string name="PlayStation">PlayStation Consoles</string>
     <string name="PSTitle">RETRO RUMBLE</string>
     <string name="PSTitle2">PlayStation Authorized Dealer</string>
     <string name="NewestArrival">Newest Arrival:</string>
@@ -60,4 +58,9 @@
     with Sony PlayStation 2 and Nintendo Gamecube, the sales were not great and SEGA finally conceded, leaving the
     console war entirely. That being said, SEGA has a wide selection of games that everyone can also enjoy.</string>
     <string name="SNKTitle">SNK Consoles</string>
+    <string name="PS3Title">Sony PLAYSTATION 3</string>
+    <string name="PS3Description">Sony PLAYSTATION 3 launched in 2006 and became a part of the 7th generation of consoles,
+        this particular model is the launch model, meaning that it is backwards compatible with PlayStation 2 games,
+        while all the PlayStation 3 is backwards compatible with PlayStation 1 games, only a handful of revisions are
+        PlayStation 2 backwards compatible, sold in 20GB (CECH-B0x) and 60GB (CECH-Axx) variant.</string>
 </resources>
