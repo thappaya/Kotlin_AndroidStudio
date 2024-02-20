@@ -54,4 +54,10 @@
     <string name="support_Title">We are here to help!</string>
     <string name="support_Desc">After submitting your request, RETRO RUMBLE representative will attempt to contact you by E-mail,
         please provide all the necessary details so RETRO RUMBLE can assist you as much as we can.</string>
+    <string name="DreamcastTitle">SEGA Dreamcast</string>
+    <string name="dcQuote">Starts at 6,500 THB</string>
+    <string name="dcDescription">SEGA Dreamcast is the last time we have seen SEGA in the video game console space, directly competing
+    with Sony PlayStation 2 and Nintendo Gamecube, the sales were not great and SEGA finally conceded, leaving the
+    console war entirely. That being said, SEGA has a wide selection of games that everyone can also enjoy.</string>
+    <string name="SNKTitle">SNK Consoles</string>
 </resources>

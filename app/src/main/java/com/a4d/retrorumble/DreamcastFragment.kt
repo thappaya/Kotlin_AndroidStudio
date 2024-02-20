@@ -6,29 +6,26 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.a4d.retrorumble.databinding.FragmentSegaBinding
-class SEGAFragment: Fragment() {
-    private var _binding: FragmentSegaBinding? = null
+import com.a4d.retrorumble.databinding.FragmentDreamcastBinding
+
+class DreamcastFragment: Fragment() {
+    private var _binding: FragmentDreamcastBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentSegaBinding.inflate(inflater, container, false)
+        _binding = FragmentDreamcastBinding.inflate(inflater, container, false)
         return binding.root
     }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.backButton7.setOnClickListener {
-            findNavController().navigate(R.id.action_SEGAFragment_to_ShopFragment)
+        binding.backButton8.setOnClickListener {
+            findNavController().navigate(R.id.action_DreamcastFragment_to_SEGAFragment)
         }
-        binding.dreamcastButton.setOnClickListener {
-            findNavController().navigate(R.id.action_SEGAFragment_to_DreamcastFragment)
-        }
-
     }
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

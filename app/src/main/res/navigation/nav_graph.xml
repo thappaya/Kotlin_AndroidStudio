@@ -183,7 +183,7 @@
     <fragment
         android:id="@+id/AESFragment"
         android:name="com.a4d.retrorumble.AESFragment"
-        android:label="@string/AESTitle"
+        android:label="@string/SNKTitle"
         tools:layout="@layout/fragment_aes">
         <action
             android:id="@+id/action_AESFragment_to_ShopFragment"
@@ -197,8 +197,13 @@
         android:label="@string/SEGA_name"
         tools:layout="@layout/fragment_sega">
         <action
-            android:id="@+id/action_SEGAFragement_to_ShopFragment"
+            android:id="@+id/action_SEGAFragment_to_ShopFragment"
             app:destination="@id/ShopFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_SEGAFragment_to_DreamcastFragment"
+            app:destination="@id/DreamcastFragment"
             app:enterAnim="@android:anim/slide_in_left"
             app:exitAnim="@android:anim/slide_out_right"/>
     </fragment>
@@ -213,4 +218,16 @@
             app:enterAnim="@android:anim/slide_in_left"
             app:exitAnim="@android:anim/slide_out_right"/>
     </fragment>
+    <fragment
+        android:id="@+id/DreamcastFragment"
+        android:name="com.a4d.retrorumble.DreamcastFragment"
+        android:label="@string/SEGA_name"
+        tools:layout="@layout/fragment_dreamcast">
+        <action
+            android:id="@+id/action_DreamcastFragment_to_SEGAFragment"
+            app:destination="@id/SEGAFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"/>
+</fragment>
+
 </navigation>
