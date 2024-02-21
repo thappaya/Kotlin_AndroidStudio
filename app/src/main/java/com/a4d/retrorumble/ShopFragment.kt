@@ -39,6 +39,9 @@ class ShopFragment: Fragment() {
         binding.NinButton.setOnClickListener{
             findNavController().navigate(R.id.action_ShopFragment_to_NintendoFragment)
         }
+        binding.SNKButton.setOnClickListener {
+            findNavController().navigate(R.id.action_ShopFragment_to_SNKFragment)
+        }
     }
 
     override fun onDestroyView() {

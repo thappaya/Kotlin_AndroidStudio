@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".NintendoFragment">
+    tools:context=".SNKFragment">
 
     <Button
-        android:id="@+id/ninBack"
+        android:id="@+id/SNKBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="103dp"
@@ -19,10 +19,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewAllNin" />
+        app:layout_constraintTop_toBottomOf="@+id/viewAllSNK" />
 
     <TextView
-        android:id="@+id/ninTitle"
+        android:id="@+id/SNK_Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -30,79 +30,79 @@
         android:text="@string/PSTitle"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/ninTitle2"
+        app:layout_constraintBottom_toTopOf="@+id/SNKTitle2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/ninTitle2"
+        android:id="@+id/SNKTitle2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="monospace"
-        android:text="@string/ninTitle"
+        android:text="@string/SNKTitle"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/New"
+        app:layout_constraintBottom_toTopOf="@+id/NewSNK"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ninTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/SNK_Title" />
 
     <TextView
-        android:id="@+id/New"
+        android:id="@+id/NewSNK"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="11dp"
         android:fontFamily="monospace"
         android:text="@string/NewestArrival"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/NESButton"
+        app:layout_constraintBottom_toTopOf="@+id/NEOGEO_Button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ninTitle2" />
+        app:layout_constraintTop_toBottomOf="@+id/SNKTitle2" />
 
     <ImageButton
-        android:id="@+id/NESButton"
+        android:id="@+id/NEOGEO_Button"
         android:layout_width="283dp"
         android:layout_height="207dp"
         android:layout_marginTop="8dp"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toTopOf="@+id/nfc_pic"
+        app:layout_constraintBottom_toTopOf="@+id/neoGeoPic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/New"
-        app:srcCompat="@drawable/nintendo_famicom_console_set_fl_removebg_preview" />
+        app:layout_constraintTop_toBottomOf="@+id/NewSNK"
+        app:srcCompat="@drawable/neogeo" />
 
     <TextView
-        android:id="@+id/nfc_pic"
+        android:id="@+id/neoGeoPic"
         android:layout_width="278dp"
         android:layout_height="27dp"
         android:fontFamily="monospace"
-        android:text="@string/NESTitle"
+        android:text="@string/neoGeo"
         android:textAlignment="center"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/NESQuote"
+        app:layout_constraintBottom_toTopOf="@+id/SNK_Quote"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/NESButton" />
+        app:layout_constraintTop_toBottomOf="@+id/NEOGEO_Button" />
 
     <TextView
-        android:id="@+id/NESQuote"
+        android:id="@+id/SNK_Quote"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="monospace"
-        android:text="@string/NESQuote"
+        android:text="@string/neoGeoPrice"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/viewNinText"
+        app:layout_constraintBottom_toTopOf="@+id/viewSNKText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nfc_pic" />
+        app:layout_constraintTop_toBottomOf="@+id/neoGeoPic" />
 
     <TextView
-        android:id="@+id/viewNinText"
+        android:id="@+id/viewSNKText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="26dp"
@@ -110,13 +110,13 @@
         android:fontFamily="monospace"
         android:text="@string/shopButtonTitle"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/viewAllNin"
+        app:layout_constraintBottom_toTopOf="@+id/viewAllSNK"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/NESQuote" />
+        app:layout_constraintTop_toBottomOf="@+id/SNK_Quote" />
 
     <Button
-        android:id="@+id/viewAllNin"
+        android:id="@+id/viewAllSNK"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -124,9 +124,9 @@
         android:fontFamily="monospace"
         android:textStyle="bold"
         android:text="@string/ViewAll"
-        app:layout_constraintBottom_toTopOf="@+id/ninBack"
+        app:layout_constraintBottom_toTopOf="@+id/SNKBack"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewNinText" />
+        app:layout_constraintTop_toBottomOf="@+id/viewSNKText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

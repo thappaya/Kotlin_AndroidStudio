@@ -173,6 +173,11 @@
             app:destination="@id/NintendoFragment"
             app:enterAnim="@android:anim/slide_in_left"
             app:exitAnim="@android:anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_ShopFragment_to_SNKFragment"
+            app:destination="@id/SNKFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"/>
     </fragment>
     <fragment
         android:id="@+id/PlayStationFragment"
@@ -196,8 +201,8 @@
         android:label="@string/SNKTitle"
         tools:layout="@layout/fragment_aes">
         <action
-            android:id="@+id/action_AESFragment_to_ShopFragment"
-            app:destination="@id/ShopFragment"
+            android:id="@+id/action_AESFragment_to_SNKFragment"
+            app:destination="@id/SNKFragment"
             app:enterAnim="@android:anim/slide_in_left"
             app:exitAnim="@android:anim/slide_out_right"/>
     </fragment>
@@ -274,6 +279,22 @@
         <action
             android:id="@+id/action_NESFragment_to_NintendoFragment"
             app:destination="@id/NintendoFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/SNKFragment"
+        android:name="com.a4d.retrorumble.SNKFragment"
+        android:label="@string/SNKTitle"
+        tools:layout="@layout/fragment_snk">
+        <action
+            android:id="@+id/action_SNKFragment_to_ShopFragment"
+            app:destination="@id/ShopFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_SNKFragment_to_AESFragment"
+            app:destination="@id/AESFragment"
             app:enterAnim="@android:anim/slide_in_left"
             app:exitAnim="@android:anim/slide_out_right"/>
     </fragment>
