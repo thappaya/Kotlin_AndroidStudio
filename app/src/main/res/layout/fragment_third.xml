@@ -58,7 +58,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/rounded_background"
-        android:text="Redeem your Arcade Pass (25/100 Available)"
+        android:text="Redeem your Arcade Pass (25/30 Available)"
         android:textStyle="bold"
         android:typeface="monospace"
         app:layout_constraintBottom_toTopOf="@+id/freeDrinkButton"
