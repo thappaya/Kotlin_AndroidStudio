@@ -168,6 +168,11 @@
             app:destination="@id/SEGAFragment"
             app:enterAnim="@android:anim/slide_in_left"
             app:exitAnim="@android:anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_ShopFragment_to_NintendoFragment"
+            app:destination="@id/NintendoFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"/>
     </fragment>
     <fragment
         android:id="@+id/PlayStationFragment"
@@ -242,6 +247,33 @@
         <action
             android:id="@+id/action_PS3Fragment_to_PlayStationFragment"
             app:destination="@id/PlayStationFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/NintendoFragment"
+        android:name="com.a4d.retrorumble.NintendoFragment"
+        android:label="@string/ninTitle"
+        tools:layout="@layout/fragment_nintendo">
+        <action
+            android:id="@+id/action_NintendoFragment_to_ShopFragment"
+            app:destination="@id/ShopFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_NintendoFragment_to_NESFragment"
+            app:destination="@id/NESFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/NESFragment"
+        android:name="com.a4d.retrorumble.NESFragment"
+        android:label="@string/ninTitle"
+        tools:layout="@layout/fragment_nes">
+        <action
+            android:id="@+id/action_NESFragment_to_NintendoFragment"
+            app:destination="@id/NintendoFragment"
             app:enterAnim="@android:anim/slide_in_left"
             app:exitAnim="@android:anim/slide_out_right"/>
     </fragment>

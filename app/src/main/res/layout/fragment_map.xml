@@ -10,7 +10,7 @@
         android:id="@+id/imageView"
         android:layout_width="252dp"
         android:layout_height="181dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginBottom="24dp"
         app:layout_constraintBottom_toTopOf="@+id/rrNearYou"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,23 +21,26 @@
         android:id="@+id/rrNearYou"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
         android:fontFamily="monospace"
         android:text="@string/rr_nearyou"
-        android:textStyle="bold"
         android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/mapView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <com.google.android.gms.maps.MapView
         android:id="@+id/mapView"
-        android:layout_width="405dp"
-        android:layout_height="304dp"
-        android:layout_marginTop="81dp"
+        android:layout_width="366dp"
+        android:layout_height="282dp"
+        android:layout_marginTop="16dp"
         android:layout_marginBottom="138dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rrNearYou" />
+        app:layout_constraintTop_toBottomOf="@+id/rrNearYou"
+        app:layout_constraintVertical_bias="0.114" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
