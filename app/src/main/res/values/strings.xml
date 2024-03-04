@@ -63,6 +63,14 @@
         this particular model is the launch model, meaning that it is backwards compatible with PlayStation 2 games,
         while all the PlayStation 3 is backwards compatible with PlayStation 1 games, only a handful of revisions are
         PlayStation 2 backwards compatible, sold in 20GB (CECH-B0x) and 60GB (CECH-Axx) variant.</string>
+    <string name="ninTitle">Nintendo Consoles</string>
+    <string name="NESTitle">Nintendo Family Computer (JP)</string>
+    <string name="NESQuote">Starts at 2,200 THB</string>
+    <string name="NESDescription">Nintendo entered the video game console industry with Nintendo Family Computer,
+    launched only in Japan, it has sold pretty well throughout its life, and when the console went to the US Market,
+    the design has changed to mimic the VHS Recorder, named the Nintendo Entertainment System or NES. It has been unanimously
+    accepted as the console that saved the video game industry from the crash.</string>
+    <string name="FDSAdd">Add Family Computer Disk System: 2,200 THB</string>
     <string name="rr_Encyclopedia">Welcome to RETRO RUMBLE Encyclopedia!</string>
     <string name="rrEn_label">RETRO RUMBLE Encyclopedia</string>
     <string name="En_label">Encyclopedia</string>
