@@ -50,6 +50,9 @@ class ThirdFragment : Fragment() {
                 .setAction("Action", null).show()
             findNavController().navigate(R.id.action_ThirdFragment_to_SupportFragment)
         }
+        binding.rrEnButton.setOnClickListener {
+            findNavController().navigate(R.id.action_ThirdFragment_to_EncyclopediaFragment)
+        }
     }
     override fun onDestroyView() {
         super.onDestroyView()

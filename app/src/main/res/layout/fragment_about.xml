@@ -11,14 +11,14 @@
         android:layout_width="302dp"
         android:layout_height="150dp"
         android:src="@drawable/screenshot_2024_02_10_184648_removebg_preview"
-        app:layout_constraintBottom_toTopOf="@+id/rrAboutTitle"
+        app:layout_constraintBottom_toTopOf="@+id/rrEnTitle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/rrAboutTitle"
+        android:id="@+id/rrEnTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="monospace"
@@ -83,7 +83,7 @@
         app:layout_constraintBottom_toTopOf="@+id/rrAbout1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/rrAboutTitle" />
+        app:layout_constraintTop_toBottomOf="@id/rrEnTitle" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

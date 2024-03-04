@@ -85,6 +85,11 @@
             app:destination="@id/SupportFragment"
             app:enterAnim="@android:anim/slide_in_left"
             app:exitAnim="@android:anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_ThirdFragment_to_EncyclopediaFragment"
+            app:destination="@id/EncyclopediaFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"/>
     </fragment>
     <fragment
         android:id="@+id/FourthFragment"
@@ -242,6 +247,35 @@
         <action
             android:id="@+id/action_PS3Fragment_to_PlayStationFragment"
             app:destination="@id/PlayStationFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/EncyclopediaFragment"
+        android:name="com.a4d.retrorumble.EncyclopediaFragment"
+        android:label="@string/En_label"
+        tools:layout="@layout/fragment_encyclopedia">
+        <action
+            android:id="@+id/action_EncyclopediaFragment_to_About4DFragment"
+            app:destination="@id/About4DFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_EncyclopediaFragment_to_ThirdFragment"
+            app:destination="@id/ThirdFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/About4DFragment"
+        android:name="com.a4d.retrorumble.About4DFragment"
+        android:label="@string/fourDgroup_label"
+        tools:layout="@layout/fragment_about4d">
+        <action
+            android:id="@+id/action_About4DFragment_to_EncyclopediaFragment"
+            app:destination="@id/EncyclopediaFragment"
             app:enterAnim="@android:anim/slide_in_left"
             app:exitAnim="@android:anim/slide_out_right"/>
     </fragment>

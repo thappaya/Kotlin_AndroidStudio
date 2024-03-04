@@ -89,7 +89,7 @@
         app:layout_constraintBottom_toTopOf="@id/rrMapButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/shopButton" />
+        app:layout_constraintTop_toBottomOf="@+id/rrEnButton" />
 
     <ImageButton
         android:id="@+id/rrMapButton"
@@ -106,13 +106,12 @@
         android:id="@+id/shopButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/rounded_background"
         android:text="@string/shopButton"
-        app:layout_constraintBottom_toTopOf="@+id/logoutButton"
         android:textStyle="bold"
         android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/rrEnButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/freeDrinkButton" />
@@ -133,5 +132,19 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@android:drawable/ic_menu_call" />
+
+    <Button
+        android:id="@+id/rrEnButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_background"
+        android:text="@string/rrEn_label"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/logoutButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shopButton"
+        app:layout_constraintVertical_bias="0.008" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -63,4 +63,26 @@
         this particular model is the launch model, meaning that it is backwards compatible with PlayStation 2 games,
         while all the PlayStation 3 is backwards compatible with PlayStation 1 games, only a handful of revisions are
         PlayStation 2 backwards compatible, sold in 20GB (CECH-B0x) and 60GB (CECH-Axx) variant.</string>
+    <string name="rr_Encyclopedia">Welcome to RETRO RUMBLE Encyclopedia!</string>
+    <string name="rrEn_label">RETRO RUMBLE Encyclopedia</string>
+    <string name="En_label">Encyclopedia</string>
+    <string name="fourDgroup_label">4D inc.</string>
+    <string name="aboutFourD">About 4D inc.</string>
+    <string name="privateCompany">4D inc.: Private Company in Thailand.</string>
+    <string name="fourD_HQ">Headquarters: Bangkok, Thailand.</string>
+    <string name="fourD_aboutText">4D group is a privately owned company originated in Bangkok, Thailand
+        by 4 members, operated under the philosophy of bringing people together and eliminating the barriers of
+        speaking the truth. The company currently held the title of the most favorable company in the world
+        (as of 2027) and the fastest growing company in terms of revenue growth (as of 2028).</string>
+    <string name="fourD_aboutText2">Currently, 4D consists of 4 members,
+        with various business in entertainment, music, gaming, and social responsibility.</string>
+    <string name="fourD_aboutText3">Members of the 4D group has been involved in many acts of being bullied in high school,
+        which sparked a common interest among them to form a group called 4D, they stated that it was a tough time and
+        decided that they would stay together and continue working together as a team to change the world,
+        so that no one would have to deal with the issues they have been through. As of 2026,
+        the member launched a campaign known as “4D Academy” to help build a platform for teenagers who have been
+        dealing with bullying issues, and various social issues, which became very successful and impacted a wide
+        variety of communities. After 6 months since the launch of the campaign, 4D members established 4D inc.
+        A private company which will took over the project operation of both 4D Academy and RETRO RUMBLE which
+        launched in the same year as 4D Academy.</string>
 </resources>
