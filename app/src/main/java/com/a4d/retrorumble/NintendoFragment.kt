@@ -6,10 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.a4d.retrorumble.databinding.FragmentPlaystationBinding
+import com.a4d.retrorumble.databinding.FragmentNintendoBinding
 
-class PlayStationFragment: Fragment() {
-    private var _binding: FragmentPlaystationBinding? = null
+class NintendoFragment: Fragment() {
+    private var _binding: FragmentNintendoBinding? = null
     private val binding get() = _binding!!
 
 
@@ -17,17 +17,17 @@ class PlayStationFragment: Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentPlaystationBinding.inflate(inflater, container, false)
+        _binding = FragmentNintendoBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.PSBack.setOnClickListener {
-            findNavController().navigate(R.id.action_PlayStationFragment_to_ShopFragment)
+        binding.ninBack.setOnClickListener {
+            findNavController().navigate(R.id.action_NintendoFragment_to_ShopFragment)
         }
-        binding.ps3Button.setOnClickListener {
-            findNavController().navigate(R.id.action_PlayStationFragment_to_PS3Fragment)
+        binding.NESButton.setOnClickListener {
+            findNavController().navigate(R.id.action_NintendoFragment_to_NESFragment)
         }
     }
 

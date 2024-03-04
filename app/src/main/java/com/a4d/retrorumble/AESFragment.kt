@@ -24,7 +24,7 @@ class AESFragment: Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.backButton6.setOnClickListener {
-            findNavController().navigate(R.id.action_AESFragment_to_ShopFragment)
+            findNavController().navigate(R.id.action_AESFragment_to_SNKFragment)
         }
     }
 

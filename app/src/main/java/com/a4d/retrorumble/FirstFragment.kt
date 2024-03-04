@@ -13,8 +13,6 @@ import com.a4d.retrorumble.databinding.FragmentFirstBinding
 import com.google.android.material.snackbar.Snackbar
 class FirstFragment : Fragment() {
 
-
-
     private var _binding: FragmentFirstBinding? = null
 
     private val binding get() = _binding!!

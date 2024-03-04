@@ -6,28 +6,27 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.a4d.retrorumble.databinding.FragmentPlaystationBinding
 
-class PlayStationFragment: Fragment() {
-    private var _binding: FragmentPlaystationBinding? = null
+import com.a4d.retrorumble.databinding.FragmentSnkBinding
+
+class SNKFragment: Fragment() {
+    private var _binding: FragmentSnkBinding? = null
     private val binding get() = _binding!!
-
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentPlaystationBinding.inflate(inflater, container, false)
+        _binding = FragmentSnkBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.PSBack.setOnClickListener {
-            findNavController().navigate(R.id.action_PlayStationFragment_to_ShopFragment)
+        binding.NEOGEOButton.setOnClickListener {
+            findNavController().navigate(R.id.action_SNKFragment_to_AESFragment)
         }
-        binding.ps3Button.setOnClickListener {
-            findNavController().navigate(R.id.action_PlayStationFragment_to_PS3Fragment)
+        binding.SNKBack.setOnClickListener {
+            findNavController().navigate(R.id.action_SNKFragment_to_ShopFragment)
         }
     }
 

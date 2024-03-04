@@ -36,6 +36,12 @@ class ShopFragment: Fragment() {
         binding.SEGAButton.setOnClickListener{
             findNavController().navigate(R.id.action_ShopFragment_to_SEGAFragment)
         }
+        binding.NinButton.setOnClickListener{
+            findNavController().navigate(R.id.action_ShopFragment_to_NintendoFragment)
+        }
+        binding.SNKButton.setOnClickListener {
+            findNavController().navigate(R.id.action_ShopFragment_to_SNKFragment)
+        }
     }
 
     override fun onDestroyView() {

@@ -5,44 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".SEGAFragment">
-
-    <TextView
-        android:id="@+id/SEGATitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="37dp"
-        android:layout_marginBottom="16dp"
-        android:fontFamily="monospace"
-        android:text="@string/PSTitle"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/SEGATitle2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/SEGATitle2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:fontFamily="monospace"
-        android:text="@string/SEGA_name"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/New2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SEGATitle" />
+    tools:context=".NintendoFragment">
 
     <Button
-        android:id="@+id/backButton7"
+        android:id="@+id/ninBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="110dp"
+        android:layout_marginBottom="103dp"
         android:fontFamily="monospace"
         android:text="Back"
         android:textStyle="bold"
@@ -50,91 +19,114 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        app:layout_constraintTop_toBottomOf="@+id/viewAllNin" />
 
     <TextView
-        android:id="@+id/New2"
+        android:id="@+id/ninTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="9dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="monospace"
+        android:text="@string/PSTitle"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ninTitle2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ninTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="@string/ninTitle"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/New"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ninTitle" />
+
+    <TextView
+        android:id="@+id/New"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
         android:fontFamily="monospace"
         android:text="@string/NewestArrival"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/dreamcastButton"
+        app:layout_constraintBottom_toTopOf="@+id/NESButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SEGATitle2" />
+        app:layout_constraintTop_toBottomOf="@+id/ninTitle2" />
 
     <ImageButton
-        android:id="@+id/dreamcastButton"
+        android:id="@+id/NESButton"
         android:layout_width="283dp"
         android:layout_height="207dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginBottom="9dp"
+        android:layout_marginTop="8dp"
         android:scaleType="fitCenter"
-        android:src="@drawable/_200px_sega_dreamcast_set"
-        app:layout_constraintBottom_toTopOf="@+id/dreamcast"
+        app:layout_constraintBottom_toTopOf="@+id/nfc_pic"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/New2" />
+        app:layout_constraintTop_toBottomOf="@+id/New"
+        app:srcCompat="@drawable/nintendo_famicom_console_set_fl_removebg_preview" />
 
     <TextView
-        android:id="@+id/dreamcast"
-        android:layout_width="204dp"
-        android:layout_height="24dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="3dp"
+        android:id="@+id/nfc_pic"
+        android:layout_width="278dp"
+        android:layout_height="27dp"
         android:fontFamily="monospace"
-        android:text="@string/DreamcastTitle"
+        android:text="@string/NESTitle"
         android:textAlignment="center"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/dcQuote"
+        app:layout_constraintBottom_toTopOf="@+id/NESQuote"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dreamcastButton" />
+        app:layout_constraintTop_toBottomOf="@+id/NESButton" />
 
     <TextView
-        android:id="@+id/dcQuote"
+        android:id="@+id/NESQuote"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="monospace"
-        android:text="@string/dcQuote"
+        android:text="@string/NESQuote"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/viewNinText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dreamcast" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="monospace"
-        android:text="@string/ViewAll"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/backButton7"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewNinText" />
+        app:layout_constraintTop_toBottomOf="@+id/nfc_pic" />
 
     <TextView
         android:id="@+id/viewNinText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
-        android:layout_marginBottom="17dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="8dp"
         android:fontFamily="monospace"
         android:text="@string/shopButtonTitle"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintBottom_toTopOf="@+id/viewAllNin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dcQuote" />
+        app:layout_constraintTop_toBottomOf="@+id/NESQuote" />
+
+    <Button
+        android:id="@+id/viewAllNin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:text="@string/ViewAll"
+        app:layout_constraintBottom_toTopOf="@+id/ninBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewNinText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
